@@ -31,8 +31,8 @@ def get_weather(city_name):
             print(f" 狀況：{description}")
             print("="*30 + "\n")
         else:
-            print(f"❌ 查詢失敗：找不到 '{city_name}'，請確認拼字是否正確。")
-            print(f"🛠️ 偵錯資訊：狀態碼 {response.status_code}, 詳細訊息 {response.text}")
+            print(f" 查詢失敗：找不到 '{city_name}'，請確認拼字是否正確。")
+            print(f" 偵錯資訊：狀態碼 {response.status_code}, 詳細訊息 {response.text}")
     except requests.exceptions.RequestException as e:
         print(f"⚠️ 網路連線發生錯誤: {e}")
 
